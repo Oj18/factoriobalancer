@@ -6,11 +6,67 @@
         <meta charset="utf-8">
         <meta name="title=" content="Balapi">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+        <style>
+            html {
+            }
+            
+            body {
+                background-color: #f1f1f1;
+                margin: 0;
+            }
+
+            .wrapper {
+                text-align: center;
+                position: relative;
+            }
+
+            .container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+
+                margin: 150px 0 0 -300px;
+
+                width: 600px;
+                height: 300px;
+
+                text-align: center;
+                border:darkgray 1px solid;
+
+                background-color:#e6e6e6;
+            }
+
+            .center-text {
+                position: relative;
+                width: 100%;
+                height: 130px;
+            }
+
+            .center-text::before {
+                content: " ";
+                display: inline-block;
+                height: 100%;
+                width: 1%;
+                vertical-align: middle;
+            }
+
+            .center-text p {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        </style>
     </head>
 
     <body>
-        <p>
-            This an API for the site Factorio Balancers. If your here your just looking at the main page... Welp.
-        </p>
+        <div class="wrapper">
+            <div class="container">
+                <div class="center-text">
+                    <p>
+                        This an API for the site Factorio Balancers. If your here your just looking at the main page... welp.
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
