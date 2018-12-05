@@ -35,9 +35,15 @@ function update() {
 
 	console.log(input + " " + output + " " + type);
 
+	$("#notFound").show();
+	$("#blueprintInput").val("balancer not found");
+	$("#balancerImg").attr("src", "");
+
 	$.getJSON("./data/json/" + input + ".json", function(data) {
 		var blueprint = data[output][type];
 		var image = "./data/pics/" + type + "/" + input + "-/" + output +  ".png";
+
+		$("#notFound").hide();
 
 		$("#balancerImg").attr("src", image);
 		$("#blueprintInput").val(blueprint);
