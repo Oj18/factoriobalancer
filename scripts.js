@@ -11,7 +11,8 @@ window.onload = function() {
 		$(this).select();
 	});
 
-	$('#copyBlueprintButton').on('click', function() {
+	$('#copyBlueprintButton').mouseup(function() {
+
 		$('#blueprintInput').focus();
     	document.getElementById('blueprintInput').setSelectionRange(0, $('#blueprintInput').val().length);
     	document.execCommand('copy');
